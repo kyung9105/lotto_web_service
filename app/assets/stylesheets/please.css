@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+#name{
+    color:#683a21;
+    position:relative;
+    text-align: right;
+    right:50px;
+}
+#name .lion{
+    color:#d6911b;
+}
+#head{
+    margin: 0 auto;
+    height: 300px;
+    background-color: white;
+}
+#head .one{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Arial Black",Sans-serif ;
+    color: #3d9943;
+    right: 30px;
+
+}
+#head .one .red{
+    color:red;
+    font-size:0.8em;
+}
+#head .two{
+    position:relative;
+    left: 500px;
+    font-size:2em;
+    top: 100px;
+    
+
+}
+#head .two .three{
+    position: relative;
+    left: 350px;
+    bottom: 35px;
+}
+#head .two .four{
+    position: relative;
+    left: 400px;
+    bottom: 80px;
+}
+#body{
+    margin: 0 auto;
+    height: 300px;
+    background-color: white;
+}
+#body .test .image{
+    position:relative;
+    
+    right: 170px;
+}
+#body .image img{
+    width:500px;
+    height:200px;
+}
+#body .test{
+    position:relative;
+    left: 650px;
+}
+
+#tail{
+    margin: 0 auto;
+    height: 200px;
+    background-color: white;
+}
+#tail .tailtest{
+    position:relative;
+    left: 650px;
+}

@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+div.Google{
+    background-color: white;
+    height: 300px;
+    position: relative;
+    top : 100px;
+}
+div.Google #shadow{
+    text-shadow: rgba(255, 255, 255, .5) 1px 1px,
+    yellow 2px 3px,
+    rgba(255, 153, 0, .7) 3px 6px,
+    rgba(255, 0, 0, .5) 4px 8px; 
+    font-size:10em;
+    text-align:center;
+}
+div.Google #shadow .one{
+    color:#2e61d1;
+}
+div.Google #shadow .two{
+    color:#c12c1f;
+}
+div.Google #shadow .three{
+    color:#edd521;
+}
+div.Google #shadow .four{
+    color:#2e61d1;
+}
+div.Google #shadow .five{
+    color:#0da556;
+}
+div.Google #shadow .six{
+    color:#c12c1f;
+}
+div.Google #shadow .shadow2 {
+    color:black;
+    letter-spacing: -2px;
+    font-size:30px;
+    text-align:center;
+    white-space: pre;
+}
+
+div.Google .box{
+    height:100px;
+    width: 600px;
+    margin: 0 auto;
+}
+div.Google .box .homepage1{
+    position: relative;
+    left : 20px;
+    width: 100px;
+    bottom: 20px;
+}
+div.Google .box .homepage2{
+    position: relative;
+    left : 370px;
+    width: 100px;
+    bottom: 90px;
+}
+
+.menu{
+    position: absolute;
+    top: 380px;
+    height:350px;
+    left : 430px;
+}
+.menu img{
+    width: 600px;
+    height:200px;
+    
+}
+div.message{
+    position:absolute;
+    top:600px;
+    left: 500px;
+    width:500px;
+    background-color:#deedf7 ;
+    height:130px;
+    margin: 0 auto;
+}
+.message button{
+    position:absolute;
+    left:420px;
+}
+div.message p{
+    position: relative;
+    top: 50px;
+    font-size:2em;
+    font-family:Rockwell;
+    color:#5851bc;
+}
+div.message .btn-group{
+    text-align: right;
+    color:blue;
+}
+div.head{
+    position: absolute;
+    right: 50px;
+    height: 150px;
+    bottom: 50px;
+}
+div.head .one{
+    font-family: "Arial Balck", Geneva;
+    font-style: oblique;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: right;
+    color: #383a3a;
+}
+

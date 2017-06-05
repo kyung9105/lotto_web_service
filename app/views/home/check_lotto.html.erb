@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lan="ko">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       
+        <link type="text/css" rel="stylesheet" href="/../../assets/please.css"/>
+
+        <meta charset="utf-8">
+        <title> LOTTO RESULT.COM </title>
+    </head>
+ 
+    <body>
+        <div id="name">
+            <h3> 멋쟁이<span class="lion">사자</span>처럼!</h3>
+        </div>
+        <div id="head">
+            <h3 class="one"> <span class="red">749</span>회차 당첨 번호</h3>
+            <div class="two">
+                <br>
+                <span class="label label-default"><%= "#{@lotto_numbers1}" %></span>
+                <span class="label label-primary"><%= "#{@lotto_numbers2}" %></span>
+                <span class="label label-success"><%= "#{@lotto_numbers3}" %></span>
+                <span class="label label-info"><%= "#{@lotto_numbers4}" %></span>
+                <span class="label label-warning"><%= "#{@lotto_numbers5}" %></span>
+                <span class="label label-danger"><%= "#{@lotto_numbers6}" %></span>
+                <div class="three">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true">&nbsp;</span>
+                </div>
+                <div class="four">
+                    <span class="label label-danger"><%= "#{@bonus_number}" %></span>
+                </div>
+            </div>
+        </div>
+        <div id="body">
+            <div class="test">
+                <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> lotto 당첨 결과 </button>
+                </div>
+                <div class="image">
+                    <img src="http://thumb.photo.naver.net/exphoto01/2010/9/9/49/snc00163_2_minixmini.jpg" />
+                </div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Welcome LOTTO 100</h4>
+                        </div>
+                        <div class="modal-body">
+                        <%= " #{@final_result} " %>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+        <div id="tail">
+            <div class="tailtest">
+                <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myLargeModal">Your Lotto 100</button>
+                </div>
+            </div>
+            <div class="modal fade" id="myLargeModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Checking your Lotto numbers </h4>
+                  </div>
+                  <div class="modal-body">
+                  <%= " #{@hash} " %>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </body>
+</html>
